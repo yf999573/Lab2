@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="Action" namespace="/" extends="struts-default">
+		<action name="showtitle" class="Action.showtitle" method="search">
+			<result>/showtitle.jsp</result>
+			<result name="error">/searchfail.jsp</result>
+		</action>
+		<action name="showbook" class="Action.showbook" method="show">
+			<result>/showbook.jsp</result>
+		</action>
+		<action name="deletebook" class="Action.deletebook" method="delete">
+			<result>/deletebook.jsp</result>
+		</action>
+	</package>
+</struts>
